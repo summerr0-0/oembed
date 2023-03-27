@@ -8,7 +8,7 @@
 <body>
 <div>
     <H1>oEmbed Test</H1>
-    <form th:action="@{/data}"  method="get" >
+    <form th:action="@{/data}" method="get">
         <label>url:</label>
         <input type="text" name="url" required>
         <button type="submit">입력</button>
@@ -16,12 +16,13 @@
 
 </div>
 
-<div id="memberListContent">
-
+<div>
     <ul>
-        <li >{memberListContent.type}</li>
-        <li >테스트2</li>
-        <li >테스트3</li>
+        <h2>테스트용 url</h2>
+
+        <a th:href="@{/data?url=https://www.youtube.com/watch?v=dBD54EZIrZo}">youtube</a><br/>
+        <a th:href="@{/data?url=https://twitter.com/hellopolicy/status/867177144815804416}">twitter</a><br/>
+        <a th:href="@{/data?url=https://vimeo.com/20097015}">vimeo</a><br/>
     </ul>
 
 </div>
