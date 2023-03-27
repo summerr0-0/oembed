@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>oEmbed Test</title>
+</head>
+<body>
+<div>
+    <H1>oEmbed Test</H1>
+    <form th:action="@{/data}"  method="get" >
+        <label>url:</label>
+        <input type="text" name="url" required>
+        <button type="submit">입력</button>
+    </form>
+
+</div>
+
+<div id="memberListContent">
+
+    <ul>
+        <li >{memberListContent.type}</li>
+        <li >테스트2</li>
+        <li >테스트3</li>
+    </ul>
+
+</div>
+</body>
+</html>
