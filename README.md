@@ -76,5 +76,6 @@ URL을 입력받는 폼을 만들고 확인 버튼을 누르면 해당 URL에 �
 
 ## 구조
 
-![image-20230327164629052](/Users/jeonghyejin/Library/Application Support/typora-user-images/image-20230327164629052.png)
+![image](https://user-images.githubusercontent.com/120109736/227879091-b17f6f72-d96e-4a96-9b63-85e9c66ff719.png)
+
 
