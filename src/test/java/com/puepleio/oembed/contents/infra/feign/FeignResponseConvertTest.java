@@ -1,5 +1,6 @@
 package com.puepleio.oembed.contents.infra.feign;
 
+import com.puepleio.oembed.contents.infra.format.client.feign.FeignResponseConvert;
 import com.puepleio.oembed.contents.service.ContentsResult;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,5 @@
 package com.puepleio.oembed.contents.service;
 
-import com.puepleio.oembed.contents.controller.ContentsRequest;
 import lombok.Getter;
 
 @Getter

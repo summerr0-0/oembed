@@ -1,4 +1,4 @@
-package com.puepleio.oembed.contents.infra.feign;
+package com.puepleio.oembed.contents.infra.format.client.feign;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;

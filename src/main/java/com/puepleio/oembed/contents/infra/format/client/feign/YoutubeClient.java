@@ -1,4 +1,4 @@
-package com.puepleio.oembed.contents.infra.feign;
+package com.puepleio.oembed.contents.infra.format.client.feign;
 
 import feign.Response;
 import org.springframework.cloud.openfeign.FeignClient;
