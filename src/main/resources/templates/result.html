@@ -3,78 +3,119 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link th:href="@{/css/style.css}" type="text/css" rel="stylesheet">
     <title>oEmbed Test</title>
 </head>
 <body>
-<div>
-    <H1>oEmbed Test</H1>
+<div th:class="custom">
+    <h1>oEmbed Test</h1>
     <a th:href="@{/}">뒤로 가기</a>
+</div>
+<div>
 
-    <div th:if="${convert.type}"><span>type | </span>
-        <span th:text="${convert.type}"></span></div>
+    <tr>
 
-    <div th:if="${convert.version}"><span>version | </span>
-        <span th:number="${convert.version}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.title}">
+            <div th:class="custom-graph-box">title  </div>
+            <div th:text="${convert.title}"></div>
+        </div>
 
-    <div th:if="${convert.provider_name}"><span>provider_name | </span>
-        <span th:text="${convert.provider_name}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.html}">
+            <div th:class="custom-graph-box">convert</div>
+            <div th:utext="${convert.html}"></div>
+        </div>
 
-    <div th:if="${convert.author_url}"><span>author_url | </span>
-        <span th:text="${convert.author_url}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.type}">
+            <div th:class="custom-graph-box">type  </div>
+            <div th:text="${convert.type}"></div>
+        </div>
 
-    <div th:if="${convert.title}"><span>title | </span>
-        <span th:text="${convert.title}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.version}">
+            <div th:class="custom-graph-box"> version  </div>
+            <div th:text="${convert.version}"></div>
+        </div>
 
-    <div th:if="${convert.author_name}"><span>author_name | </span>
-        <span th:text="${convert.author_name}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.provider_name}">
+            <div th:class="custom-graph-box">provider_name  </div>
+            <div th:text="${convert.provider_name}"></div>
+        </div>
 
-    <div th:if="${convert.is_plus}"><span>is_plus | </span>
-        <span th:text="${convert.is_plus}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.author_url}">
+            <div th:class="custom-graph-box">author_url  </div>
+            <div th:text="${convert.author_url}"></div>
+        </div>
 
-    <div th:if="${convert.html}"><span th:utext="${convert.html}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.author_name}">
+            <div th:class="custom-graph-box">author_name  </div>
+            <div th:text="${convert.author_name}"></div>
+        </div>
 
-    <div th:if="${convert.width}"><span>width | </span>
-        <span th:text="${convert.width}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.is_plus}">
+            <div th:class="custom-graph-box">is_plus </div>
+            <div th:text="${convert.is_plus}"></div>
+        </div>
 
-    <div th:if="${convert.height}"><span>height | </span>
-        <span th:text="${convert.height}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.width}">
+            <div th:class="custom-graph-box">width  </div>
+            <div th:text="${convert.width}"></div>
+        </div>
 
-    <div th:if="${convert.duration}"><span>duration | </span>
-        <span th:text="${convert.duration}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.height}">
+            <div th:class="custom-graph-box">height  </div>
+            <div th:text="${convert.height}"></div>
+        </div>
 
-    <div th:if="${convert.description}"><span>description | </span>
-        <span th:text="${convert.description}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.duration}">
+            <div th:class="custom-graph-box">duration  </div>
+            <div th:text="${convert.duration}"></div>
+        </div>
 
-    <div th:if="${convert.thumbnail_url}"><span>thumbnail_url | </span>
-        <span th:text="${convert.thumbnail_url}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.description}">
+            <div th:class="custom-graph-box">description  </div>
+            <div th:text="${convert.description}"></div>
+        </div>
 
-    <div th:if="${convert.thumbnail_width}"><span>thumbnail_width | </span>
-        <span th:text="${convert.thumbnail_width}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.thumbnail_url}">
+            <div th:class="custom-graph-box">thumbnail_url  </div>
+            <div th:text="${convert.thumbnail_url}"></div>
+        </div>
 
-    <div th:if="${convert.thumbnail_height}"><span>thumbnail_height | </span>
-        <span th:text="${convert.thumbnail_height}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.thumbnail_width}">
+            <div th:class="custom-graph-box">thumbnail_width  </div>
+            <div th:text="${convert.thumbnail_width}"></div>
+        </div>
 
-    <div th:if="${convert.thumbnail_url_with_play_button}"><span>thumbnail_url_with_play_button | </span>
-        <span th:text="${convert.thumbnail_url_with_play_button}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.thumbnail_height}">
+            <div th:class="custom-graph-box">thumbnail_height  </div>
+            <div th:text="${convert.thumbnail_height}"></div>
+        </div>
 
-    <div th:if="${convert.upload_date}"><span>upload_date | </span>
-        <span th:text="${convert.upload_date}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.thumbnail_url_with_play_button}">
+            <div th:class="custom-graph-box">thumbnail_url_with_play_button  </div>
+            <div th:text="${convert.thumbnail_url_with_play_button}"></div>
+        </div>
 
-    <div th:if="${convert.video_id}"><span>video_id | </span>
-        <span th:text="${convert.video_id}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.upload_date}">
+            <div th:class="custom-graph-box">upload_date  </div>
+            <div th:text="${convert.upload_date}"></div>
+        </div>
 
-    <div th:if="${convert.uri}"><span>uri | </span>
-        <span th:text="${convert.uri}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.video_id}">
+            <div th:class="custom-graph-box">video_id  </div>
+            <div th:text="${convert.video_id}"></div>
+        </div>
 
-    <div th:if="${convert.account_type}"><span>account_type | </span>
-        <span th:text="${convert.account_type}"></span></div>
+        <div th:class="custom-graph-div" th:if="${convert.uri}">
+            <div th:class="custom-graph-box">uri  </div>
+            <div th:text="${convert.uri}"></div></div>
 
+        <div th:class="custom-graph-div" th:if="${convert.account_type}">
+            <div th:class="custom-graph-box">account_type  </div>
+            <div th:text="${convert.account_type}"></div>
+        </div>
+    </tr>
 
 </div>
 
-<div id="memberListContent">
-
-
-</div>
 </body>
 </html>
