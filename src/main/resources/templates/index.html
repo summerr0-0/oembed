@@ -3,28 +3,29 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="ko">
 <head>
     <meta charset="UTF-8">
+    <link th:href="@{/css/style.css}" type="text/css" rel="stylesheet">
     <title>oEmbed Test</title>
 </head>
+
 <body>
-<div>
-    <H1>oEmbed Test</H1>
-    <form th:action="@{/data}" method="get">
-        <label>url:</label>
-        <input type="text" name="url" required>
-        <button type="submit">입력</button>
+<div th:class="custom-input">
+    <h1>oEmbed Test</h1>
+    <form th:class="custom-form" th:action="@{/data}" method="get">
+        <input th:class="custom-input-box" type="text" name="url" required>
+        <button th:class="custom-button" type="submit">확인</button>
     </form>
 
 </div>
 
-<div>
-    <ul>
-        <h2>테스트용 url</h2>
 
-        <a th:href="@{/data?url=https://www.youtube.com/watch?v=dBD54EZIrZo}">youtube</a><br/>
-        <a th:href="@{/data?url=https://twitter.com/hellopolicy/status/867177144815804416}">twitter</a><br/>
-        <a th:href="@{/data?url=https://vimeo.com/20097015}">vimeo</a><br/>
-    </ul>
+<div th:class="custom-test-div">
+    <h2>테스트용 url 입니다</h2>
+
+    <a th:href="@{/data?url=https://www.youtube.com/watch?v=dBD54EZIrZo}">youtube</a><br/>
+    <a th:href="@{/data?url=https://twitter.com/hellopolicy/status/867177144815804416}">twitter</a><br/>
+    <a th:href="@{/data?url=https://vimeo.com/20097015}">vimeo</a><br/>
 
 </div>
+
 </body>
 </html>
