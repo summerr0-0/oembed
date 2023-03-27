@@ -22,6 +22,7 @@
 
         <div th:class="custom-graph-div" th:if="${convert.html}">
             <div th:class="custom-graph-box">convert</div>
+            <div th:text="${convert.html}"></div>
             <div th:utext="${convert.html}"></div>
         </div>
 
@@ -78,6 +79,7 @@
         <div th:class="custom-graph-div" th:if="${convert.thumbnail_url}">
             <div th:class="custom-graph-box">thumbnail_url  </div>
             <div th:text="${convert.thumbnail_url}"></div>
+            <div><img th:src="${convert.thumbnail_url}"></div>
         </div>
 
         <div th:class="custom-graph-div" th:if="${convert.thumbnail_width}">
