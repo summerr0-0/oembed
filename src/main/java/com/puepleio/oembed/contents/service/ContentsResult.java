@@ -1,13 +1,15 @@
 package com.puepleio.oembed.contents.service;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @ToString
+@AllArgsConstructor
 public class ContentsResult {
     private String type;
-    private float version;
+    private double version;
     private String provider_name;
     private String author_url;
     private String provider_url;

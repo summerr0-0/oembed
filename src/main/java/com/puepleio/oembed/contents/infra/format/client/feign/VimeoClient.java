@@ -1,6 +1,5 @@
 package com.puepleio.oembed.contents.infra.format.client.feign;
 
-import feign.Param;
 import feign.Response;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
