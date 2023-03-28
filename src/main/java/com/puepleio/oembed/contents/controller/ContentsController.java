@@ -27,7 +27,6 @@ public class ContentsController {
     public String getContents(@RequestParam("url") String url, Model model){
         ContentsResult convert = service.convert(ContentsCommand.of(url));
         model.addAttribute("convert", convert);
-        log.info(convert.toString());
         return "result";
     }
 }

@@ -2,11 +2,13 @@ package com.puepleio.oembed.contents.service;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Getter
 @ToString
 @AllArgsConstructor
+@NoArgsConstructor
 public class ContentsResult {
     private String type;
     private double version;
