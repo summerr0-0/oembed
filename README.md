@@ -75,7 +75,9 @@ URL을 입력받는 폼을 만들고 확인 버튼을 누르면 해당 URL에 �
 
 
 ## 구조
-
-![image](https://user-images.githubusercontent.com/120109736/227879091-b17f6f72-d96e-4a96-9b63-85e9c66ff719.png)
+![image](https://user-images.githubusercontent.com/120109736/228434088-e6a6d077-4e42-4d1a-85ef-f58f33e2cb97.png)
+![oembed](https://user-images.githubusercontent.com/120109736/228433665-ea865147-6a02-4c5b-a3cd-745374d2c715.png)
+- CallClientService 인터페이스, FormatService 인터페이스로 기능이 아닌 역할에 의존할 수 있도록 하였습니다.
+- 테스트코드로 기능개발에 확신을 가질 수 있도록 작업하였습니다.
 
 
