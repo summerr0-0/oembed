@@ -25,8 +25,13 @@ URL을 입력받는 폼을 만들고 확인 버튼을 누르면 해당 URL에 �
 
 
 ## 기능 설명
+- 어플리케이션을 실행후 http://localhost:8080/ 에 접속합니다
 
-- 화면에서 url을 입력합니다
+- 화면에서 테스트용 url을 입력합니다
+  - https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=dBD54EZIrZo&format=json
+  - https://vimeo.com/api/oembed.json?url=https://vimeo.com/20097015
+  - https://publish.twitter.com/oembed?url=https://twitter.com/hellopolicy/status/867177144815804416
+  - 혹은 하단에 테스트용 링크 클릭
 
 ![image](https://user-images.githubusercontent.com/120109736/227863691-c6c61d69-34b1-462e-8831-5c5a9c5871f6.png)
 
@@ -79,5 +84,4 @@ URL을 입력받는 폼을 만들고 확인 버튼을 누르면 해당 URL에 �
 ![oembed](https://user-images.githubusercontent.com/120109736/228433665-ea865147-6a02-4c5b-a3cd-745374d2c715.png)
 - CallClientService 인터페이스, FormatService 인터페이스로 기능이 아닌 역할에 의존할 수 있도록 하였습니다.
 - 테스트코드로 기능개발에 확신을 가질 수 있도록 작업하였습니다.
-
 
