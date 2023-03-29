@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class FeignService implements CallClientService {
+    private final FeignResponseConvert convert;
     private final TwitterClient twitterClient;
     private final VimeoClient vimeoClient;
     private final YoutubeClient youtubeClient;
@@ -27,6 +28,6 @@ public class FeignService implements CallClientService {
 
         } else throw new IllegalArgumentException("유효한 서비스가 아닙니다 :: twitter, youtube, vimeo만 요청해주세요");
 
-        return FeignResponseConvert.getResult(FeignResponseConvert.getResponseBody(responseBody));
+        return convert.getResponseBody(responseBody);
     }
 }
